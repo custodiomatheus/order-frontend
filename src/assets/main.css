@@ -1,8 +1,24 @@
 @import 'tailwindcss';
 
+@theme {
+  --color-primary-50: #edf3ff;
+  --color-primary-500: #1052e0;
+
+  --color-neutral-300: #a3acb6;
+  --color-neutral-700: #303e49;
+  --color-neutral-500: #566574;
+
+  --color-success-500: #1e976c;
+}
+
 #app {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  #app {
+    padding: 1rem;
+  }
 }
