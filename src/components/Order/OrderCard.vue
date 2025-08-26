@@ -14,7 +14,7 @@ const props = defineProps({
 })
 
 const documentText = computed(() => {
-  if (props.document.type || props.document.value) {
+  if (props.document.type && props.document.value) {
     return `${props.document.type} ${props.document.value}`
   }
 
@@ -23,7 +23,10 @@ const documentText = computed(() => {
 </script>
 
 <template>
-  <div class="flex flex-col gap-4 p-4 rounded-lg shadow-[0px_4px_8px_0px_#00000014]">
+  <div
+    test-id="order-card"
+    class="flex flex-col gap-4 p-4 rounded-lg shadow-[0px_4px_8px_0px_#00000014]"
+  >
     <div class="flex flex-col gap-1">
       <p class="text-neutral-500 text-xs">{{ label }}</p>
 

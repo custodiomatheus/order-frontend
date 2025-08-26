@@ -27,7 +27,7 @@ const createdAtTime = computed(() => props.createdAt.split('T')[1]?.split('.')[0
 
     <div class="flex-1 flex flex-col justify-between gap-4 md:flex-row">
       <div>
-        <h2 class="text-neutral-500 text-xl font-bold mb-3">{{ buyer }}</h2>
+        <h2 data-test="buyer" class="text-neutral-500 text-xl font-bold mb-3">{{ buyer }}</h2>
         <BaseIconText :text="contact.name" class="mb-2 md:mb-1">
           <template #icon-left>
             <UserRound :size="12" color="#566574" />
@@ -56,7 +56,7 @@ const createdAtTime = computed(() => props.createdAt.split('T')[1]?.split('.')[0
       </div>
 
       <div class="flex flex-col md:items-end gap-1">
-        <h2 class="text-neutral-500 text-xl font-bold">USD {{ price }}</h2>
+        <h2 data-test="price" class="text-neutral-500 text-xl font-bold">USD {{ price }}</h2>
         <p class="text-success-500 text-xl font-semibold">{{ status }}</p>
         <p class="text-neutral-700 text-xs">
           <BaseIconText :text="`Created at ${createdAtDate} at ${createdAtTime}`">
