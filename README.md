@@ -1,57 +1,55 @@
-# order-frontend-chanllenge
+# Order Frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+## Sumário
+- [Requisitos](#requisitos)
+- [Instalação](#instalação)
+- [Tecnologias utilizadas](#tecnologias-utilizadas)
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Requisitos
 
-## Customize configuration
+- **Node.js**: `v20.18.1`  
+  Recomenda-se usar **nvm** para fixar a versão por projeto:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+  ```sh
+  nvm install 20.18.1
+  nvm use 20.18.1
+  ```
 
-## Project Setup
+- **npm** (dei preferência em usar o npm pois ele ja vem com o Node, outros como yarn e pnpm precisam ser instalados)
 
+---
+
+## Instalação
+
+1) **Instalar as dependências**
 ```sh
-pnpm install
+npm install
 ```
 
-### Compile and Hot-Reload for Development
-
+2) **Rodar em desenvolvimento**
 ```sh
-pnpm dev
+npm run dev
+```
+> A aplicação foi configurada para rodar em `http://localhost:3000`.
+
+3) **Rodar os testes unitários**
+```sh
+npm run test:unit
 ```
 
-### Compile and Minify for Production
+---
 
-```sh
-pnpm build
-```
+## Tecnologias utilizadas
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-pnpm test:unit
-```
-
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-pnpm test:e2e:dev
-```
-
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
-
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
-pnpm build
-pnpm test:e2e
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
+- **Vue 3**
+- **Vue Router**
+- **Vite**
+- **Vitest** (+ @vue/test-utils) – _testes unitários_
+- **Cypress** – _planejado; ainda sem testes E2E_
+- **Tailwind CSS**
+- **Lucide Icons** (`lucide-vue-next`)
+- **Axios**
+- **ESLint**
+- **Prettier**
