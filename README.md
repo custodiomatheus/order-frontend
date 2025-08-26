@@ -1,13 +1,20 @@
 # Order Frontend
 
-## Sumário
+### Site do projeto
+
+https://order-frontend-psi.vercel.app/
+
+---
+
+### Sumário
+
 - [Requisitos](#requisitos)
 - [Instalação](#instalação)
 - [Tecnologias utilizadas](#tecnologias-utilizadas)
 
 ---
 
-## Requisitos
+### Requisitos
 
 - **Node.js**: `v20.18.1`  
   Recomenda-se usar **nvm** para fixar a versão por projeto:
@@ -21,27 +28,31 @@
 
 ---
 
-## Instalação
+### Instalação
 
-1) **Instalar as dependências**
+1. **Instalar as dependências**
+
 ```sh
 npm install
 ```
 
-2) **Rodar em desenvolvimento**
+2. **Rodar em desenvolvimento**
+
 ```sh
 npm run dev
 ```
+
 > A aplicação foi configurada para rodar em `http://localhost:3000`.
 
-3) **Rodar os testes unitários**
+3. **Rodar os testes unitários**
+
 ```sh
 npm run test:unit
 ```
 
 ---
 
-## Tecnologias utilizadas
+### Tecnologias utilizadas
 
 - **Vue 3**
 - **Vue Router**
